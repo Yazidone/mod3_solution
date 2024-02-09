@@ -1,0 +1,106 @@
+
+
+h1{
+    text-align: center;
+
+}
+
+.bx{
+    background-color: #777;
+    margin: 10px;
+
+} 
+
+
+.box{
+   
+    display: flex;
+    grid-template-columns: 66% 33%;
+}
+
+.box2{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 50% 50%;
+    
+
+}
+
+.card1{
+    position: relative;
+    margin-right: 10px;
+    border: 3px solid black;
+    background-color: #777;
+    
+}
+.card2{
+    position: relative;
+    margin-right: 10px;
+    border: 3px solid black;
+    background-color: #777;
+
+    
+}
+.card3{
+    position: relative;
+    margin-right: 10px;
+    border: 3px solid black;
+    background-color: #777;
+
+}
+h2{
+    position: relative;
+    text-align: center;
+    
+}
+
+p{
+    margin-top: 50px;
+    padding: 12px;
+    
+}
+.mymenu a{
+    text-align: center;
+}
+
+
+/* pc */
+@media screen and (min-width : 991px) {
+.mymenu{
+    display: none;
+    
+}
+
+    
+}
+
+/* tablete */
+@media screen and (min-width:768px) and (max-width:991px){
+   .box{
+    grid-template-rows: 100%;
+   
+    flex-wrap: wrap;
+    
+   }
+   .card3{
+    margin-top: 10px;
+    
+
+   }
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+.box{
+    flex-wrap: wrap;
+
+}
+    .box2{
+         flex-wrap: wrap;
+    }
+    .card2, .card3{
+        margin-top: 10px;
+    }
+    
+}
+
